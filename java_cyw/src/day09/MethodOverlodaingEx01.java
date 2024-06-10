@@ -6,11 +6,11 @@ public class MethodOverlodaingEx01 {
 		
 		// 대표적인 메소드 오버로딩이 적용된 메소드
 		
-		System.out.println(1);
-		System.out.println('a');
-		System.out.println("abc");
-		System.out.println(1.23);
-		System.out.println(true);
+		System.out.println(1); // 매개변수가 int
+		System.out.println('a'); // 매개변수가 char
+		System.out.println("abc"); // 매개변수가 Stirng
+		System.out.println(1.23); // 매개변수가 double
+		System.out.println(true); // 매개변수가 boolean
 
 
 	}
