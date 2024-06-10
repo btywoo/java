@@ -93,13 +93,11 @@ public class StudentEx01 {
 				int num1 = scan.nextInt();
 				
 				
-				/*
-				
 				if(list == null) {
 					System.out.println("저장된 학생이 없습니다");
 				}
 				for(int i = 0; i < count; i++) {
-					if(list[i] != grade1 || list[i] != classNum1 || list[i] != num1) {
+					if(list[i].getGrade() != grade1 || list[i].getClassNum() != classNum1 || list[i].getNum() != num1) {
 						System.out.println("일치하는 학생이 없습니다");
 					}
 					else {
@@ -118,12 +116,36 @@ public class StudentEx01 {
 				
 				}
 				
-				*/
-				
 				break;
 				
 			case 3 :
 				System.out.println("성적 확인입니다");
+				
+				System.out.print("학년 입력 : ");
+				int grade2 = scan.nextInt();
+				
+				System.out.print("반 입력 : ");
+				int classNum2 = scan.nextInt();
+				
+				System.out.print("번호 입력 : ");
+				int num2 = scan.nextInt();
+				
+				
+				if(list == null) {
+					System.out.println("저장된 학생이 없습니다");
+				}
+				for(int i = 0; i < count; i++) {
+					if(list[i].getGrade() != grade2 || list[i].getClassNum() != classNum2 || list[i].getNum() != num2) {
+						System.out.println("일치하는 학생이 없습니다");
+					}
+					else {
+						
+						list[i].printScore();
+					}
+					
+				}
+					
+					
 				break;
 				
 			case 4 :
@@ -267,6 +289,10 @@ class Student{
 		this.eng = eng;
 		this.math = math;
 		
+	}
+	
+	public void printScore() {
+		System.out.println("국어 점수 : " + kor + "\n영어 점수 : " + eng + "\n수학 점수 : " + math);
 	}
 	
 }
