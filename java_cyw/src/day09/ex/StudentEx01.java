@@ -1,4 +1,4 @@
-package day09;
+package day09.ex;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -276,11 +276,6 @@ class Student{
 		
 	}
 	
-	
-	public void print() {
-		System.out.println(grade + "학년 " + classNum + "반 " + num + "번 " + name);
-	}
-	
 	public Student() {}
 	
 	public void updateScore(int kor, int eng, int math) {
@@ -292,6 +287,7 @@ class Student{
 	}
 	
 	public void printScore() {
+		System.out.println(grade + "학년 " + classNum + "반 " + num + "번 " + name);
 		System.out.println("국어 점수 : " + kor + "\n영어 점수 : " + eng + "\n수학 점수 : " + math);
 	}
 	
