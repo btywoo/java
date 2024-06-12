@@ -30,11 +30,8 @@ public class VocabularyEx01 {
 			switch(menu) {
 			
 			case 1 : 
-				
 				System.out.println("단어 등록 기능 구현 중입니다. \n단어를 입력하세요");
-				
 				wordCount = insertWord(list, wordCount);
-				
 				break;
 				
 			case 2 :
@@ -44,12 +41,16 @@ public class VocabularyEx01 {
 				
 			case 3 :
 				System.out.println("단어 검색 기능 구현 중입니다. \n단어를 입력하세요");
-				
+				searchWord(list, wordCount);
 				break;
 				
 			case 4 :
 				System.out.println("단어 삭제 기능 구현 중입니다. \n단어를 입력하세요");
+				deleteWord(list,wordCount);
+				break;
 				
+			case 5 :
+				System.out.println("프로그램을 종료합니다");
 				break;
 				
 			default :
@@ -58,8 +59,6 @@ public class VocabularyEx01 {
 				}
 		}
 		while(menu != 5);
-		
-		System.out.println("프로그램을 종료합니다");
 	}
 	
 	
@@ -201,22 +200,10 @@ public class VocabularyEx01 {
 
 	public static void changeWord(Word [] list, int wordCount) {
 		
-		System.out.println("단어 : ");
+		System.out.print("단어 : ");
 		String word = scan.next();
-		int count = 0; // 일치하는 단어의 개수
 		
-		for(int i = 0; i < wordCount; i++) {
-			if(list[i].getWord().equals(word)) {
-				System.out.println(i + 1 + ".");
-				list[i].print();
-				count++;
-			}
-		}
-		
-		if(count == 0) {
-			System.out.println("수정할 단어가 없습니다");
-			return;
-		}
+		printSearchWord(list, wordCount, word);
 		
 		System.out.println("수정할 단어 번호 선택 : ");
 		int num = scan.nextInt();
@@ -251,8 +238,79 @@ public class VocabularyEx01 {
 		return list[index].getWord().equals(word);
 	}
 	
+	public static void searchWord(Word [] list, int wordCount) {
+		
+		System.out.print("단어 : ");
+		String word = scan.next();
+		printSearchWord(list, wordCount, word);
+		
+	}
 	
+	public static int deleteWord(Word [] list, int wordCount) {
+		
+		System.out.print("단어 : ");
+		String word = scan.next();
+		printSearchWord(list, wordCount, word);
+		
+		System.out.println("삭제할 단어 번호 선택 : ");
+		int num = scan.nextInt();
+		
+		if(!findWord(list, word, num - 1)) {
+			System.out.println("잘못된 번호를 선택했습니다");
+			return wordCount;
+		}
+		
+		wordCount = delete(list, wordCount, num - 1);
+		
+		System.out.println("====================");
+		System.out.println("단어 삭제를 완료했습니다.");
+		System.out.println("====================");
+		
+		return wordCount;
+		
+	}
 
+	public static void printSearchWord(Word [] list, int wordCount, String word) {
+		
+		int count = 0; // 일치하는 단어의 개수
+		
+		for(int i = 0; i < wordCount; i++) {
+			if(list[i].getWord().equals(word)) {
+				list[i].print();
+				count++;
+			}
+		}
+		
+		if(count == 0) {
+			System.out.println("일치하는 단어가 없습니다");
+			return;
+		}
+		
+		
+	}
+	
+	public static int delete(Word [] list, int wordCount, int index) {
+		
+		Word[] tmp = new Word[list.length];
+		
+		System.arraycopy(list, 0, tmp, 0, wordCount);
+		
+		
+		if(wordCount - index - 1 != 0) {
+			System.arraycopy(tmp, index + 1, list, index , wordCount - index - 1);
+		}
+		
+		wordCount--;
+		list[wordCount] = null;
+		
+		return wordCount;
+		
+	}
+	
+	
+	
+	
+	
 }
 
 
@@ -286,9 +344,9 @@ class Word {
 	public void print() {
 		
 		System.out.println("====================");
-		System.out.print("품사 : " + wordClass);
-		System.out.print("단어 : " + word);
-		System.out.print("뜻 : " + meaning);
+		System.out.println("품사 : " + wordClass);
+		System.out.println("단어 : " + word);
+		System.out.println("뜻 : " + meaning);
 		System.out.println("====================");
 		
 	}
