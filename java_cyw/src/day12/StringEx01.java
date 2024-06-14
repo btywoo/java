@@ -43,6 +43,7 @@ public class StringEx01 {
 		// 안녕하세요. 리뷰입니다.
 		
 		String str4 = String.valueOf(1); // String str4 = "" + 1;
+		// String String.valueOf(기본 자료형) : 기본 자료형을 문자열로 반환
 		System.out.println(str4);
 		// String String.valueOf(기본 자료형) : 기본 자료형을 문자열로 반환
 		String str5 = String.valueOf(true); // String str5 = "" + true;
