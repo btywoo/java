@@ -3,12 +3,17 @@ package day13;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Scanner;
 
 public class DateEx01 {
+	
+	static Scanner scan = new Scanner(System.in);
 
 	public static void main(String[] args) throws ParseException {
 		
-		Date date = new Date(); // 현재 날짜를 객체로 가져온다
+		String date = null;
+		
+		date = scan.nextLine();// 현재 날짜를 객체로 가져온다
 		
 		System.out.println(date);
 		
