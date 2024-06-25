@@ -1,4 +1,4 @@
-package day18.homework;
+package day18.homework.myself;
 
 public class Main {
 

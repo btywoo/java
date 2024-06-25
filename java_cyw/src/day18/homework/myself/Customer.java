@@ -1,4 +1,4 @@
-package day18.homework;
+package day18.homework.myself;
 
 import java.io.Serializable;
 
@@ -8,19 +8,17 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 
-public class Calander implements Serializable {
+public class Customer implements Serializable {
 
 	private static final long serialVersionUID = 1234L;
 	
-	private String date;
-	private String schedule;
-	private String details;
+	private String ID;
+	private String name;
 	
 	
 	@Override
 	public String toString() {
-		return date + " " + schedule + " " + details;
+		return ID + " : " + name;
 	}
 	
-
 }
