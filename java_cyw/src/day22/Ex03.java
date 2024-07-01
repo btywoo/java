@@ -19,7 +19,6 @@ public class Ex03 {
 		list.add(2);
 		list.add(6);
 		
-		Collections.sort(list);
 		System.out.println(list);
 		
 		// Collections.reverse(list);

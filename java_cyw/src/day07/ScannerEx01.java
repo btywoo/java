@@ -22,6 +22,7 @@ public class ScannerEx01 {
 		// scan.nextLine();을 입력해 초기화 해야한다.
 		// abc 공백 def 공백 xyz 엔터 >> str1 : abc 공백 def 공백 xyz
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		// next()는 여러번 연속으로 나와도 문제가 없다
@@ -40,8 +41,14 @@ public class ScannerEx01 {
 		String str5 = scan.nextLine();
 		System.out.print("문자열 입력(next) : ");
 		String str6 = scan.nextLine();
-
-
+		
+		System.out.println(str1);
+		System.out.println(str2);
+		System.out.println(str3);
+		System.out.println(str4);
+		System.out.println(str5);
+		System.out.println(str6);
+		
 	}
 
 }

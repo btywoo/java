@@ -14,6 +14,7 @@ public class IfExam03 {
 		// > 1 + 2 = 3
 		
 		int[] num = new int[2];
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("두 정수와 산술 입력자를 입력하시오. \n ex) 1 + 2 [엔터]");

@@ -11,10 +11,12 @@ public class ConstructorEx01 {
 		// new : 연산자
 		// Scanner(System.in) : 생성자 - InputStream이 필요한 생성자
 		
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
 		// Scanner("...") : 생성자 - String(문자열)이 필요한 생성자
 		
+		@SuppressWarnings("resource")
 		Scanner scan2 = new Scanner("abc\n123\1.23");
 		
 		String str = scan.next();

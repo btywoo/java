@@ -8,6 +8,7 @@ public class LCMEx01 {
 
 		// 두 정수의 최소 공배수를 구하는 코드를 작성하시오
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		System.out.print("정수 입력 : ");

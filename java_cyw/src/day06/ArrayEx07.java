@@ -38,6 +38,7 @@ public class ArrayEx07 {
 		// 메뉴 선택 : 3
 		// 프로그램을 종료합니다
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		int menu, random, min = 1, max = 100, i, count = 0;

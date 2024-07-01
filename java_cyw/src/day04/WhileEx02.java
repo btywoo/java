@@ -1,7 +1,5 @@
 package day04;
 
-import java.util.Scanner;
-
 public class WhileEx02 {
 
 	public static void main(String[] args) {

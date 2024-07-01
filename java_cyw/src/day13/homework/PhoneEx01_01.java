@@ -115,7 +115,7 @@ public class PhoneEx01_01 {
 		int count = 0;
 		
 		for(int i = 0; i < numberCount; i++) {
-			if(list[i].getNumber().equals(tmp)) {
+			if(list[i].getNumber().equals(tmp.getNumber())) {
 				System.out.println("===================");
 				System.out.print("이미 등록된 번호입니다");
 				System.out.println("===================");

@@ -6,6 +6,7 @@ public class SwitchEx02 {
 
 	public static void main(String[] args) {
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		System.out.print("월 입력 : ");
@@ -38,13 +39,14 @@ public class SwitchEx02 {
 
 
 
+		@SuppressWarnings("resource")
 		Scanner year = new Scanner(System.in);
 
 		System.out.print("월 입력 : ");
 
 		int mon = year.nextInt();
-
-		switch(mon = year.nextInt()) {
+		
+		switch(mon) {
 			case 3,4,5 :
 				System.out.println("봄");
 				break;

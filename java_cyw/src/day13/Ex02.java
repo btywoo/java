@@ -13,6 +13,7 @@ public class Ex02 {
 		// 단 예외 발생 시, 예외처리하는 코드를 추가하시오
 		
 		
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("두 정수와 산술 연산자를 입력하시오. \nex) 1 / 0");

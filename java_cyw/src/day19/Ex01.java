@@ -10,6 +10,7 @@ public class Ex01 {
 		/* 리스트에 문자열을 5개 입력받아 저장하는 예제
 		 * */
 		//1. Scanner 생성
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		//2. 리스트를 생성
 		List<String> list = new ArrayList<String>();

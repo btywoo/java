@@ -10,6 +10,7 @@ public class ArrayEx09 {
 
 		// 문자열을 입력받아 입력받은 문자열이 있는지 없는지 알려주는 코드를 작성하시오
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		System.out.print("문자열 입력 : ");
 

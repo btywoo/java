@@ -4,12 +4,13 @@ import java.util.Objects;
 
 public class EqualsEx01 {
 
+	@SuppressWarnings("unlikely-arg-type")
 	public static void main(String[] args) {
 		
 		// Object.equals 예제
 
 		PhoneNumber pn1 = new PhoneNumber("010-1234-5678");
-		System.out.println(pn1.equals(1));
+		System.out.println(pn1.equals("1"));
 		System.out.println(pn1.equals("010-1234-5678"));
 		
 		

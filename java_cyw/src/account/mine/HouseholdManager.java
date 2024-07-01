@@ -1,4 +1,4 @@
-package account;
+package account.mine;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

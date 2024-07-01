@@ -17,6 +17,7 @@ public class ServerMain {
 		String fileName = "src/day21/socket2/server.txt";
 		try {
 			//1. ServerSocket 객체 생성
+			@SuppressWarnings("resource")
 			ServerSocket serverSocket = new ServerSocket(port);
 			//2. 무한루프
 			while(true) {

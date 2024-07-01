@@ -1,6 +1,5 @@
 package day07;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exam01 {
@@ -46,6 +45,7 @@ public class Exam01 {
 		
 		*/
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		int menu;

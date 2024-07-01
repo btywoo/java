@@ -6,8 +6,10 @@ public class StudentEx01_01 {
 	
 	// 학생 성적을 관리하기 위한 프로그램 예제 : 국어, 영어, 수학
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
 		int menu;

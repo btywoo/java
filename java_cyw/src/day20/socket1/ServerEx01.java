@@ -24,6 +24,7 @@ public class ServerEx01 {
 
 		try {
 			//2. 서버용 소켓 객체 생성
+			@SuppressWarnings("resource")
 			ServerSocket serverSocket = new ServerSocket(port);
 			
 			System.out.println("[대기 중].....");

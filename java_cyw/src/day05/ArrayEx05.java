@@ -18,6 +18,7 @@ public class ArrayEx05 {
 			arr[i] = random;
 		}
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		System.out.print("정수 입력 : ");

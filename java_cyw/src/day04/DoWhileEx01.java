@@ -8,6 +8,7 @@ public class DoWhileEx01 {
 
 		//y를 입력하면 종료하는 코드를 작성하시오 (Do while 사용)
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		char ch;

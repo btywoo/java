@@ -29,6 +29,8 @@ public class LamdaEx01 {
 		
 		System.out.println(a3.sum(10, 20));
 		
+		System.out.println(a1);
+		System.out.println(a2);
 		
 	}
 

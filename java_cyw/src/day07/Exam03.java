@@ -17,6 +17,7 @@ public class Exam03 {
 
 		String [] list = new String[] {"cat", "dog", "banana"};
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		String word;
 

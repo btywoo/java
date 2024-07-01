@@ -6,6 +6,7 @@ public class EnumEx02 {
 	
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("계절을 입력하세요 : ");

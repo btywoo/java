@@ -10,6 +10,7 @@ public class BreakEx01 {
 
 		char ch;
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		while(true) {

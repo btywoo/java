@@ -15,6 +15,7 @@ public class DoWhileEx02 {
 
 		// 메뉴 선택 : 
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		int i;

@@ -18,10 +18,12 @@ public class ServerEx01 {
 		//1. 포트 번호를 설정
 		int port = 5001;
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
 		try {
 			//2. 서버용 소켓 객체 생성
+			@SuppressWarnings("resource")
 			ServerSocket serverSocket = new ServerSocket(port);
 			
 			System.out.println("[대기 중].....");

@@ -2,6 +2,7 @@ package day09;
 
 public class ThisEx01 {
 
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		
 		Student3 std1 = new Student3();

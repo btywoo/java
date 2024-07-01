@@ -1,6 +1,5 @@
 package day07.homework;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class BaseballGame {

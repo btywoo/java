@@ -23,6 +23,7 @@ public class UpDownGame {
 		int min = 1 , max = 100;
 		int random = (int)(Math.random() * (max - min + 1) + min);
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		System.out.print("정수 입력 : ");

@@ -1,7 +1,5 @@
 package day03;
 
-import java.util.Scanner;
-
 public class SwitchEx01 {
 
 	public static void main(String[] args) {

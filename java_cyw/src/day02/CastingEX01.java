@@ -11,10 +11,12 @@ public class CastingEX01 {
 		double num1 = 3; 
 		// 자동형변환 동작. 정수를 실수로 변환하여 저장
 		// 3으로 입력했지만 3.0으로 저장
+		System.out.println(num1);
 
 		long num2 = 3;
 		// 자동형변환 동작.
 		// 정수 리터럴은 int
+		System.out.println(num2);
 
 		int num3 = 3; 
 		// 자동형변환 동작 X
@@ -22,6 +24,7 @@ public class CastingEX01 {
 		long num4 = num3;
 		// 자동형변환 동작
 		// 정수 리터럴은 int
+		System.out.println(num4);
 
 
 		int num5 = (int)3.14;

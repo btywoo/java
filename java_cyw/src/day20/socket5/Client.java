@@ -47,6 +47,7 @@ public class Client {
 			try {
 				ObjectOutputStream oos = 
 						new ObjectOutputStream(socket.getOutputStream());
+				@SuppressWarnings("resource")
 				Scanner scan = new Scanner(System.in);
 				
 				while(true) {

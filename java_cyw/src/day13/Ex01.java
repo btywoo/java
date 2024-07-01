@@ -15,6 +15,7 @@ public class Ex01 {
 		
 		System.out.print("찾고 싶은 단어를 입력하시오 : ");
 		
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		String search = scan.next();
 		int count = 0;

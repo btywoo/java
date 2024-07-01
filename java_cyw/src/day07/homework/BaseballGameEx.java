@@ -35,6 +35,7 @@ public class BaseballGameEx {
 
 		///
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		while(true) {

@@ -15,6 +15,11 @@ public class ArrayEx01 {
 		// arr4 = new int[3]; // 배열 X
 
 		arr4 = 10; // 변수
+		
+		for(int i = 0; i<arr1.length; i++) {
+			System.out.println(arr2[i]);
+			System.out.println(arr3[i] + arr4);
+		}
 
 	}
 

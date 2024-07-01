@@ -12,6 +12,7 @@ public class ArrayEx04 {
 		// 4자리 정수가 아니면 잘못 입력되었다고 출력
 		// 4자리 정수이면 저장 후 순차적으로 출력
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		System.out.print("정수 입력 : ");

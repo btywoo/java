@@ -24,6 +24,7 @@ public class Exam02 {
 
 		String[] list = new String[2];
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		String tmp;
 

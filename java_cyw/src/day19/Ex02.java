@@ -15,6 +15,7 @@ public class Ex02 {
 		 * => 1900-01-01
 		 * */
 		//1. Scanner 생성
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		//2. 주민번호 입력
 		System.out.print("주민번호 입력 : ");
@@ -55,6 +56,13 @@ public class Ex02 {
 		
 		//5-4. 변환된 문자열을 출력
 		System.out.println(result);
+		
+		
+		String result2;
+		result2 = convert1(num);
+		
+		//5-4. 변환된 문자열을 출력
+		System.out.println(result2);
 	}
 
 	private static String convert1(String num) {

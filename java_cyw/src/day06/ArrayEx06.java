@@ -34,6 +34,7 @@ public class ArrayEx06 {
 		*/
 		
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		int arr[] = new int[4]; 

@@ -12,6 +12,7 @@ public class ClientEx05 {
 		
 		try {
 			System.out.print("아이디 입력 : ");
+			@SuppressWarnings("resource")
 			Scanner scan = new Scanner(System.in);
 			String id = scan.nextLine();
 			

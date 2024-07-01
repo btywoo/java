@@ -1,4 +1,4 @@
-package account;
+package account.mine;
 
 public class Ex {
 
@@ -68,5 +68,6 @@ public class Ex {
 		// 메뉴 선택 : 4
 		// 2024-06-10 | 수입 | 월급 | 280000 | 6월 월급
 		// 조회 완료
+	
 
 }

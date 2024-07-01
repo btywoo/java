@@ -2,10 +2,11 @@ package day12;
 
 public class MathEx01 {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		System.out.println("-1의 절댓값 : " + Math.abs(-1));
-		System.out.println("-1의 절댓값 : " + (-1<0?-(-1):-1));
+		System.out.println("-1의 절댓값 : " + (-1<0?-(-1): -1));
 		// abs() : 절대값
 		
 		System.out.println("1.23을 소수점 첫번째 자리에서 올림 : " + Math.ceil(1.23));

@@ -10,6 +10,7 @@ public class Ex01 {
 		// 전화번호를 5번 입력받아 리스트에 저장하는 코드를 작성하시오
 		// 단, 전화번호는 올바르게 입력했다고 가정. (정규표현식 사용하지 않아도 됨)
 		
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
 		ArrayList<String> list = new ArrayList<String>();

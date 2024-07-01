@@ -16,6 +16,7 @@ public class ServerEx01 {
 		int port = 5001;
 		String fileName = "src/day21/socket1/server.txt";
 		try {
+			@SuppressWarnings("resource")
 			ServerSocket serverSocket = new ServerSocket(port);
 			while (true) {
 				Socket socket = serverSocket.accept();

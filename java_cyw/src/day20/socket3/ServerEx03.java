@@ -17,6 +17,7 @@ public class ServerEx03 {
 		
 		try {
 			//서버용 소켓 객체 생성
+			@SuppressWarnings("resource")
 			ServerSocket serverSocket = new ServerSocket(port);
 			//대기 및 연결 요청 수락 후 소켓 객체 생성
 			Socket socket = serverSocket.accept();
@@ -55,6 +56,7 @@ public class ServerEx03 {
 						OutputStream os = socket.getOutputStream();
 						ObjectOutputStream oos = new ObjectOutputStream(os);
 						
+						@SuppressWarnings("resource")
 						Scanner scan = new Scanner(System.in);
 						
 						while(true) {

@@ -7,6 +7,8 @@ public class FinalEx01 {
 		final int num; // final 변수는 상수로 값을 최초 한 번만 할당 할 수 있다
 		num = 20; // 처음이라 가능
 		// num = 30; // 처음이 아니라 불가
+		
+		System.out.println(num);
 	}
 
 }

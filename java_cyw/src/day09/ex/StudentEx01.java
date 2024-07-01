@@ -1,6 +1,5 @@
 package day09.ex;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class StudentEx01 {
@@ -36,6 +35,7 @@ public class StudentEx01 {
 		// 학생 등록 기능을 구현하시오
 		// 학년, 반, 번호, 이름을 입력 받아 학생을 추가하세요.
 		
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
 		int menu;

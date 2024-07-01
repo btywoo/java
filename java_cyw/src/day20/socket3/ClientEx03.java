@@ -17,6 +17,7 @@ public class ClientEx03 {
 		String ip = "192.168.30.200";
 		
 		try {
+			@SuppressWarnings("resource")
 			Socket socket = new Socket(ip, port);
 			System.out.println("[연결 성공]");
 			
@@ -27,6 +28,7 @@ public class ClientEx03 {
 					OutputStream os = socket.getOutputStream();
 					ObjectOutputStream oos = new ObjectOutputStream(os);
 					
+					@SuppressWarnings("resource")
 					Scanner scan = new Scanner(System.in);
 					
 					while(true) {

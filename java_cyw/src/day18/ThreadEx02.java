@@ -23,6 +23,8 @@ public class ThreadEx02 {
 			System.out.print("|");
 		}
 		
+		System.out.println(mt);
+		
 	}
 
 }

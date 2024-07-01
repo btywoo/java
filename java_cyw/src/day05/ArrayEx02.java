@@ -13,6 +13,7 @@ public class ArrayEx02 {
 
 		int stsc[] = new int[3]; 
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		int sum = 0;

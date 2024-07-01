@@ -1,5 +1,7 @@
 package day14;
 
+import lombok.Data;
+
 public class GenericEx01 {
 
 	public static void main(String[] args) {
@@ -86,6 +88,7 @@ class Array<T> {
 	}
 }
 
+@Data
 class Test<A,B> {
 	
 	private A data1;

@@ -17,6 +17,7 @@ public class ClientEx01 {
 		
 		int port = 5001;//서버 포트
 		
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
 		//1. 소켓을 생성하고 대기

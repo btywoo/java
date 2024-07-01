@@ -210,6 +210,7 @@ public class ContactManager implements Program {
 	public void load() {
 		try {
 			//소켓 생성
+			@SuppressWarnings("resource")
 			Socket socket = new Socket(ip, port);
 			//ObjectInput/OutputStream 생성(Socket 이용)
 			ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
@@ -230,6 +231,7 @@ public class ContactManager implements Program {
 	public void save() {
 		try {
 			//1. 소켓 생성
+			@SuppressWarnings("resource")
 			Socket socket = new Socket(ip, port);
 			//2.소켓을 이용하여 ObjectOutputStream 객체 생성
 			ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());

@@ -10,6 +10,7 @@ public class ArrayEx04 {
 
 		int arr[] = new int[3]; 
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		for(int i = 0; i < arr.length; i++) {

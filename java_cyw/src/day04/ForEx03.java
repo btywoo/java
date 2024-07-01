@@ -8,6 +8,7 @@ public class ForEx03 {
 
 		// 문자를 입력 받고, 입력 받은 문자가 y면 종료하는 코드를 작성하시오 (For문 사용)
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		char ch;

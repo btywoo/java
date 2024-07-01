@@ -8,6 +8,7 @@ public class IfExam06 {
 
 		//성적을 입력 받아 성적에 맞는 학점을 출력하는 코드를 작성하시오
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		System.out.print("점수 입력 : ");

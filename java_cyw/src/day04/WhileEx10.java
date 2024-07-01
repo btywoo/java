@@ -24,6 +24,7 @@ public class WhileEx10 {
 
 		char ch = 'n';
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		while(ch != 'y') {

@@ -52,6 +52,7 @@ public class Exam04 {
 
 
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		String[] list = new String[2];

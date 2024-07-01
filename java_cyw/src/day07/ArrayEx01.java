@@ -1,7 +1,5 @@
 package day07;
 
-import java.security.DrbgParameters.NextBytes;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayEx01 {
@@ -38,10 +36,13 @@ public class ArrayEx01 {
 		String[] subname = new String[3];
 		int[][] score = new int[3][3];
 
-		int i, j = 0, sum = 0, sum1 = 0;
+		int i = 0, j = 0, sum = 0, sum1 = 0;
 		double avg = 0, avg1 = 0;
+		
+		System.out.println(i + j + sum1 + avg1);
 
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 

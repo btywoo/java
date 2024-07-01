@@ -24,6 +24,7 @@ public class ExceptionEx05 {
 }
 
 
+@SuppressWarnings("serial")
 class MyException extends Exception {
 	
 	String who;

@@ -61,6 +61,7 @@ public class ClientManager implements Program{
 	@SuppressWarnings("unchecked")
 	public void load() {
 		try {
+			@SuppressWarnings("resource")
 			Socket socket = new Socket(ip, port);
 			ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
 			oos.writeUTF("load");
@@ -86,6 +87,7 @@ public class ClientManager implements Program{
 	
 	public void save() {
 		try {
+			@SuppressWarnings("resource")
 			Socket socket = new Socket(ip, port);
 			ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
 			oos.writeUTF("save");

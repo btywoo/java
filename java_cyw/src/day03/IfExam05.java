@@ -8,6 +8,7 @@ public class IfExam05 {
 
 		// 정수를 입력 받아 2,3,6의 배수인지 아닌지 판별하는 코드를 작성하시오
 
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 
 		System.out.print("정수 입력 : ");

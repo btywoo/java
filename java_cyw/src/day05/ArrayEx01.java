@@ -7,7 +7,7 @@ public class ArrayEx01 {
 
 		// 5명의 학생 성적을 저장하기 위한 변수를 선언하시오
 
-		int sc1, sc2, sc3, sc4, sc5;
+		int sc1 = 0, sc2 = 0, sc3 = 0, sc4 = 0, sc5 = 0;
 		// 지역 변수
 		// 자동으로 초기화되지 않음
 
@@ -47,8 +47,18 @@ public class ArrayEx01 {
 		// System.out.println(scores[2]);
 		// System.out.println(scores[3]);
 		// System.out.println(scores[4]);
-
-
+		
+		System.out.println(sc1 + sc2 + sc3 + sc4 + sc5);
+		
+		for(int i = 0; i<scores3.length; i++) {
+			System.out.print(scores2[i] + " ");
+		}
+		
+		System.out.println();
+		
+		for(int i = 0; i<scores3.length; i++) {
+			System.out.print(scores3[i] + " ");
+		}
 	}
 
 }

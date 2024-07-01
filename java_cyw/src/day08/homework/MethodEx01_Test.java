@@ -11,6 +11,7 @@ public class MethodEx01_Test {
 
 		//정수 입력(배열의 크기)
 		System.out.print("배열 크기 입력 : ");
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		int size = scan.nextInt();
 		//입력 받은 정수를 이용하여 정수 배열을 생성
