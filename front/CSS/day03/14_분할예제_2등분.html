@@ -3,26 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>2등분 분할 예제</title>
+	<title>2등분 분할 예제2</title>
 	<style>
-
 		.container{
-			border: 3px solid black;
+			border: 10px solid black;
 		}
 		.container::after{
 			clear: both; display: block;
 			content: '';
 		}
 		.box{
-			width: calc(50% - 5px); height: 500px;
-			border: 3px solid red;
+			width: calc(50% - 5px);
+			height: 500px;
+			border: 10px solid red;
 			float: left;
 			box-sizing: border-box;
 		}
-
 		.container :last-child{
-			border-color: blue;
-			float: right;
+			border-color: blue; float: right;
 		}
 	</style>
 </head>
