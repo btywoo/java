@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UI 디자인</title>
+	<script src="../../static/js/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+	<style>
+		.form-group>label, .form-group>input{
+			float: left;
+		}
+		.form-group::after{
+			display: block; content: ''; clear: both;
+		}
+		.form-group>label{
+			width: 100px; font-weight: bold;
+			text-align: center;
+		}
+		.form-group>.form-control{
+			width: calc(100% - 100px); box-sizing: border-box;
+		}
+		.form-control{
+			margin-bottom: 10px;
+		}
+		.text-center{
+			text-align: center;
+		}
+		.table{
+			border: 1px solid black; width: 100%;
+		}
+		.table td, .table th{
+			border: 1px solid black;
+		}
+		.table thead, .table tfoot{
+			color: white;
+			background-color: rgb(255, 194, 170);
+		}
+		.table tbody{
+			background-color: rgb(255, 251, 233);
+		}
+		.table .btn{ 
+			width: 100%;
+		}
+		#content{
+			height: 200px;
+			padding-top : -10;
+		}
+		.error{
+			color: red; font-size: 12px;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<form action="inset.no" id="form">
+		<fieldset>
+			<legend>공지사항 작성하기</legend>
+			<div class="form-group">
+				<label for="title">제목</label>
+				<input type="text" name="title" id="title" class="form-control">
+			</div>
+			<div>
+				<label for="title" id="title-error" class="error"></label>
+			</div>
+			<div class="form-group">
+				<label for="content">내용</label>
+				<input type="text" name="content" id="content" class="form-control" placeholder=#content>
+			</div>
+			<div>
+				<label for="content" id="content-error" class="error"></label>
+			</div>
+			<div class="form-group">
+				<label for="uploadFile">첨부 파일</label>
+				<button type="submit" name="uploadFile" id="uploadFile" class="btn">파일 선택</button>
+			</div>
+			<div class="error-uploadFile"></div>
+			<div class="form-group text-center">
+				<button type="submit" id="sub-btn" class="btn">작성하기</button>
+			</div>
+		</fieldset>
+	</form>
+	<hr>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>번호</th>
+				<th colspan="2">제목</th>
+				<th>작성자</th>
+				<th>작성일</th>
+				<th>조회수</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>9</td>
+				<td>공지사항 제목 9</td>
+				<td><button class="btn">바로가기</button></td>
+				<td>user01</td>
+				<td>2021-03-29</td>
+				<td>34</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>공지사항 제목 6</td>
+				<td><button class="btn">바로가기</button></td>
+				<td>answ445</td>
+				<td>2021-03-12</td>
+				<td>67</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>공지사항 제목 3</td>
+				<td><button class="btn">바로가기</button></td>
+				<td>testg12</td>
+				<td>2021-03-01</td>
+				<td>98</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>공지사항 제목 2</td>
+				<td><button class="btn">바로가기</button></td>
+				<td>palwe3</td>
+				<td>2021-01-02</td>
+				<td>85</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>공지사항 제목 1</td>
+				<td><button class="btn">바로가기</button></td>
+				<td>xml23</td>
+				<td>2020-12-24</td>
+				<td>124</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th colspan="4">전체 공지사항 개수</th>
+				<th colspan="2">5개</th>
+			</tr>
+		</tfoot>
+	</table>
+
+	<script>
+
+		$('#form').validate({
+			rules : {
+				title : {
+					required : true
+				},
+				content : {
+					required : true
+				}
+			},
+			messages : {
+				title : {
+					required : '필수 항목입니다.'
+				},
+				content : {
+					required : '필수 항목입니다.'
+				}
+			}
+		});
+
+		$('.form-group>[name=title]').val("제목을 입력하시오.");
+		$('.form-group>[name=content]').val("내용을 입력하시오.");
+		
+	</script>
+
+</body>
+</html>
