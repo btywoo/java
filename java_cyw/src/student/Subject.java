@@ -3,16 +3,24 @@ package student;
 import java.io.Serializable;
 import java.util.Objects;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-public class Subject implements Serializable{
+@AllArgsConstructor
+public class Subject implements Serializable {
 
-	private static final long serialVersionUID = 5678L;
-
-	private int grade, semester, midterm, finalExam, perAss;
-	
+	private static final long serialVersionUID = -2872421688647654540L;
+	//과목명, 학년, 학기, 중간, 기말, 수행평가
 	private String name;
+	private int grade;
+	private int semester;
+	private int midterm;
+	private int finals;
+	private int performance;
+	
+	//한 학생에게 같은 과목명, 학년, 학기 성적이 여러개 있을 수 없기 때문에
+	//equals를 과목명, 학년, 학기를 이용하여 오버라이딩
 
 	@Override
 	public boolean equals(Object obj) {
@@ -23,36 +31,24 @@ public class Subject implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		Subject other = (Subject) obj;
-		return grade == other.grade && midterm == other.midterm && Objects.equals(name, other.name);
+		return grade == other.grade && Objects.equals(name, other.name) && semester == other.semester;
 	}
-
 	@Override
 	public int hashCode() {
-		return Objects.hash(grade, midterm, name);
+		return Objects.hash(grade, name, semester);
 	}
-
-	public Subject(String name, int grade, int semester, int midterm, int finalExam, int perAss) {
-		
-		this.grade = grade;
-		this.semester = semester;
+	public void update(int midterm, int finals, int performace) {
 		this.midterm = midterm;
-		this.finalExam = finalExam;
-		this.perAss = perAss;
-		this.name = name;
-		
+		this.finals = finals;
+		this.performance = performace;
 	}
-
 	@Override
 	public String toString() {
-		return "과목 : " + name + "\n" + grade + "학년 " + semester + "학기\n중간 시험 : " + midterm + 
-				"\n기말 시험 : " + finalExam + "\n수행 평가 : " + perAss + "\n총점 : " + total();
+		return "과목 : " + name + "\n" + grade + "학년 " + semester + "학기\n중간 : " + midterm
+				+ "\n기말 : " + finals + "\n수행 : " + performance + "\n총점 : " + getTotal();
 	}
-
-	private double total() {
-		return midterm * 0.4 + finalExam * 0.4 + perAss * 0.2;
+	private double getTotal() {
+		return midterm * 0.4 + finals * 0.5 + performance * 0.1;
 	}
 	
-	
-
-
 }

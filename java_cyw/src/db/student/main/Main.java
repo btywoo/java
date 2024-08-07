@@ -1,4 +1,4 @@
-package student;
+package db.student.main;
 
 public class Main {
 
